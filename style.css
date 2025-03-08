@@ -33,25 +33,32 @@ header::before {
     height: 100%;
     background: url('https://cdn.educba.com/academy/wp-content/uploads/2019/11/DevOps-Engineer.jpg') 
     center/cover no-repeat; 
-    filter: blur(4px) opacity(100%); /* 10% Blur Effect */
+    filter: blur(4px) opacity(100%); /* 4px Blur Effect */
     z-index: 0;
 }
 
-/* Header Text */
+/* Header Text Styling */
 header h1, header p {
     position: relative;
     z-index: 1;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2); /* Light Transparent Background */
+    border-radius: 8px; /* Rounded Corners */
 }
 
+/* Header Name */
 header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #fff;
+    color: #004080; /* Dark Blue */
 }
 
+/* Header Subheading */
 header p {
     font-size: 1.4rem;
     font-weight: bold;
+    color: #004080; /* Dark Blue */
 }
 
 /* Container */
