@@ -1,0 +1,135 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #0073e6;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Container for content */
+.container {
+    width: 85%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Header Styling */
+h2 {
+    font-size: 2rem;
+    color: #0073e6;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+}
+
+/* Profile Section Styling */
+section p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Skills Section Styling */
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.skills li:hover {
+    background-color: #e0efff;
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Experience Section Styling */
+.experience ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience li {
+    margin-bottom: 20px;
+}
+
+.experience li ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.experience li strong {
+    font-size: 1.2rem;
+    color: #0073e6;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
