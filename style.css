@@ -16,14 +16,19 @@ body {
 /* Header Styling */
 header {
     position: relative;
-    background: linear-gradient(135deg, #001f3f, #003b6f); /* Deep Blue Gradient */
+    background: url('https://www.talent-works.com/wp-content/uploads/2021/03/3981-TW-Blog-Why-Hire-a-DevOps-engineer_BLOG-HEADER-1920x629-v1.png') 
+    center/cover no-repeat;
     text-align: center;
     padding: 60px 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ensures full visibility */
 }
 
-/* Background Image with Blur Effect */
+/* Dark Overlay for Readability */
 header::before {
     content: "";
     position: absolute;
@@ -31,34 +36,35 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://www.talent-works.com/wp-content/uploads/2021/03/3981-TW-Blog-Why-Hire-a-DevOps-engineer_BLOG-HEADER-1920x629-v1.png') 
-    center/cover no-repeat; 
-    filter: blur(1px) opacity(100%); /* 4px Blur Effect */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
     z-index: 0;
 }
 
-/* Header Text Styling */
-header h1, header p {
+/* Centering Header Text */
+.header-text {
     position: relative;
     z-index: 1;
-    display: inline-block;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.2); /* Light Transparent Background */
-    border-radius: 8px; /* Rounded Corners */
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    padding: 15px 30px;
+    border-radius: 8px;
 }
 
 /* Header Name */
 header h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
-    color: #FFFFFF; /* Dark Blue */
+    margin-bottom: 5px;
+    color: #ffffff; /* White */
 }
 
 /* Header Subheading */
 header p {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #FFFFFF; /* Dark Blue */
+    color: #f2a900; /* Gold for contrast */
+    margin-top: 0;
 }
 
 /* Container */
@@ -144,6 +150,10 @@ footer p {
     .container {
         width: 95%;
         padding: 20px;
+    }
+
+    header {
+        height: 250px; /* Adjust height for smaller screens */
     }
 
     header h1 {
